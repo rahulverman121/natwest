@@ -1,0 +1,6 @@
+Server :
+  port: 9002
+
+  spring.mvc.view.prefix : /WEB-INF/
+  spring.mvc.view.suffix : .jsp
+  spring.mvs.static-path-pattern : /resources/**
