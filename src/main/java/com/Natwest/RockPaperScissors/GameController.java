@@ -55,15 +55,16 @@ public class GameController {
 
     @RequestMapping("/")
     public String play() {
-        return "<style>.playform{background:#e1051f;padding:2.7rem;border:0.1rem groove #d10918;box-shadow: 0 0 1rem #42145f}" +
+        return "<style>.playform{margin:3rem 0;background:#e1051f;padding:3.9rem;border:0.1rem groove #d10918;box-shadow: 0 0 1rem #42145f}" +
                 ".reset {border:0.1rem solid #42145f;color:#42145f}" +
                 "input[type='radio']{cursor:pointer}</style>" +
                 "<h2 style='padding:2.5rem;background:#42145f;color:#fff;align-items:center;display:flex'>Rock Paper Scissors</h2>" +
-                "<form action='/play' method='post' class='playform'><div style='font-size:1.4rem;color:#fff'><input type='radio' name='move' value='1'> Rock</br>" +
+                "<section style='display:flex;justify-content:center;'><form action='/play' method='post' class='playform'><div style='font-size:1.4rem;color:#fff'><input type='radio' name='move' value='1'> Rock</br>" +
                 "<input type='radio' name='move' value='2' checked> Paper</br>" +
-                "<input type='radio' name='move' value='3' > Scissor</br></br></div>" +
+                "<input type='radio' name='move' value='3' > Scissor</br></br></br></div>" +
                 "<input type='submit' value='Play' style='font-size:1.2rem;background:#42145f;border-color:#42145f;color:#fff;padding:0.5rem;border-radius:1rem;margin-right:1rem;cursor:pointer'>" +
-                "<input type='reset' value='Reset' style='font-size:1.2rem;background:#fff;padding:0.5rem;border-radius:1rem;cursor:pointer' class='reset'></form>";
+                "<input type='reset' value='Reset' style='font-size:1.2rem;background:#fff;padding:0.5rem;border-radius:1rem;cursor:pointer' class='reset'></form></section>" +
+                "<footer style='display:flex;justify-content:center;align-items:center;height:6.5rem;width:100%;color:#fff;background:#001;flex-direction:column;'>&copy; Designed & Developed by RAHUL VERMAN <div>INDIA | 2022<div></footer>";
     }
 
 
